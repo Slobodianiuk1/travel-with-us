@@ -1,0 +1,52 @@
+.steps {
+	background-color: $DarkGreayColor;
+
+	padding: 0;
+
+	.container {
+
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		min-height: 306px;
+		background-image: url('../img/line-min.svg');
+		background-repeat: no-repeat;
+		background-position: 51% 37%;
+		padding: 87px 0 45px 0;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+		max-width: 880px;
+		margin: 0;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 120px;
+			margin-bottom: 0;
+		}
+	}
+
+	svg {
+		background-color: #333;
+	}
+
+	.accent {
+		height: 71px;
+		padding-top: 7px;
+	}
+
+	.red {
+		height: 77px;
+		padding-top: 13px;
+	}
+
+	.blue {
+		height: 70px;
+		padding-top: 6px;
+	}
+}

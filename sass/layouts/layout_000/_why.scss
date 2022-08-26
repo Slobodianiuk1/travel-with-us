@@ -1,0 +1,125 @@
+.why {
+	padding: 60px 0;
+	background-image: url('../img/WhyBackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		// padding-right: 113px; pc
+		align-items: center;
+
+		.why__text {
+			order: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 648px;
+			min-height: 324px;
+
+
+			.title {
+				font-family: 'Aleo', 'Arial', serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 36px;
+				text-transform: capitalize;
+				color: $whiteColor;
+				margin-bottom: 19px;
+				text-align: center;
+			}
+
+			.subtitle {
+				font-family: 'Josefin Sans';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 28px;
+				letter-spacing: 0.1em;
+				color: $whiteColor;
+				margin-bottom: 24px;
+				text-align: center;
+			}
+
+			.subtitle:not(:last-child) {
+				margin-bottom: 35px;
+			}
+
+			.btn-main {
+				display: inline-block;
+				position: relative;
+				width: 213px;
+				min-height: 60px;
+				background-color: $AccentColor;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				z-index: 1;
+				padding: 10px 15px;
+				transition: background-color .4s;
+
+				&:hover {
+					background-color: #486BFE;
+
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 0;
+					width: 52px;
+					border-bottom: 60px solid #486BFE;
+					border-right: 57px solid transparent;
+					z-index: 2;
+				}
+
+				span {
+					position: relative;
+					color: $whiteColor;
+					font-family: 'Aleo', 'Arial', serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					text-align: center;
+					letter-spacing: 0.07em;
+					text-transform: uppercase;
+
+					z-index: 3;
+				}
+
+			}
+		}
+
+
+		.why__img {
+			order: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 37px;
+
+			img {
+
+				object-fit: cover;
+				width: 258px;
+				height: 162px;
+			}
+
+			img:not(:last-child) {
+				object-fit: cover;
+				width: 258px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

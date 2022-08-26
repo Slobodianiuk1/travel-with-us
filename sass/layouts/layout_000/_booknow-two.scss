@@ -1,0 +1,107 @@
+.booknow-two {
+	// padding: 220px 0 0 0;
+
+	background-image: url('../img/booknow-two.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 588px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+
+	.container {
+		padding: 120px 18px;
+		display: flex;
+		justify-content: center;
+		min-height: 588px;
+
+		.card {
+			max-width: 648px;
+			min-height: 344px;
+			background: rgba(35, 35, 35, 0.9);
+			padding: 44px 32px;
+
+			span {
+				display: inline-block;
+				font-family: 'Josefin Sans', 'Arial', sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 20px;
+				letter-spacing: 0.1em;
+				color: $whiteColor;
+				margin-bottom: 25px;
+			}
+
+			h4 {
+				font-family: 'Josefin Sans', 'Arial', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				text-transform: uppercase;
+				color: $whiteColor;
+				margin-bottom: 30px;
+			}
+
+			p {
+				font-family: 'Josefin Sans', 'Arial', sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 28px;
+				letter-spacing: 0.1em;
+				color: $whiteColor;
+				margin-bottom: 24px;
+			}
+
+			.btn-main {
+				display: inline-block;
+				position: relative;
+				width: 213px;
+				min-height: 60px;
+				background-color: $AccentColor;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				z-index: 1;
+				padding: 10px 15px;
+				transition: background-color .4s;
+
+				&:hover {
+					background-color: #486BFE;
+
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 0;
+					width: 52px;
+					border-bottom: 60px solid #486BFE;
+					;
+					border-right: 57px solid transparent;
+					z-index: 2;
+				}
+
+				span {
+					position: relative;
+					color: $whiteColor;
+					font-family: 'Aleo', 'Arial', serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					text-align: center;
+					letter-spacing: 0.07em;
+					text-transform: uppercase;
+					margin: 0;
+					z-index: 3;
+				}
+			}
+
+		}
+	}
+}

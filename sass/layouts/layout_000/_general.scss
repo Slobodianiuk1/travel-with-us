@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: $baseFontSize;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}

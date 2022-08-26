@@ -1,0 +1,26 @@
+.booknow-two {
+	background-image: url('../img/booknow-two.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 684px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+
+	.container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding: 220px 15px 120px;
+		min-height: 684px;
+
+		.card {
+			max-width: 648px;
+			min-height: 344px;
+			background: rgba(35, 35, 35, 0.9);
+			padding: 44px 32px;
+
+		}
+	}
+}

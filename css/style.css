@@ -387,59 +387,69 @@ body {
 }
 
 .menu__burger {
-  z-index: 110;
-  display: block;
-  position: relative;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  padding: 23px 15px;
+  background-color: transparent;
   border: none;
-  background-color: #5373FD;
+  cursor: pointer;
+  position: relative;
+  z-index: 110;
   border-radius: 50px;
 }
 .menu__burger:hover {
   background-color: #4664e9;
 }
 
+.menu__burger span {
+  position: relative;
+  transition: all 0.01s ease 0.15s;
+}
+
 .menu__burger span,
 .menu__burger span::before,
 .menu__burger span::after {
-  position: absolute;
-  top: 50%;
-  margin-top: 0px;
-  left: 50%;
-  margin-left: -20px;
-  width: 40px;
   height: 2px;
-  transition: all 0.3s ease 0s;
+  width: 40px;
   background-color: #fff;
+  opacity: 100%;
 }
 
 .menu__burger span::before,
 .menu__burger span::after {
   content: "";
-  display: block;
-  transition: 0.3s;
+  position: absolute;
+  left: 0;
 }
 
 .menu__burger span::before {
-  transform: translateY(9px);
+  top: -11px;
+  transition: transform 0.15s ease, top 0.15s ease 0.16s;
 }
 
 .menu__burger span::after {
-  transform: translateY(-11px);
+  bottom: -11px;
+  transition: transform 0.15s ease, bottom 0.15s ease 0.16s;
 }
 
 .header_active .menu__burger span {
-  height: 0;
+  background-color: transparent;
+  transition: all 0.01s ease 0.15s;
 }
 
 .header_active .menu__burger span::before {
-  transform: rotate(-45deg);
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.15s ease, transform 0.15s ease 0.16s;
 }
 
 .header_active .menu__burger span:after {
-  transform: rotate(45deg);
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 0.15s ease, transform 0.15s ease 0.16s;
 }
 
 .menu__body {

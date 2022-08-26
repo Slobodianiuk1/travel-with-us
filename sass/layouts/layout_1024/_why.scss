@@ -1,0 +1,67 @@
+.why {
+	padding: 124px 0;
+	background-image: url('../img/WhyBackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 704px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-right: 113px;
+		align-items: center;
+
+		.why__text {
+			order: 1;
+			max-width: 648px;
+			min-height: 324px;
+			margin-bottom: 0;
+			margin-right: 30px;
+			align-items: flex-start;
+
+			.title {
+				text-align: start;
+			}
+
+			.subtitle {
+				text-align: start;
+			}
+		}
+
+		.why__img {
+			order: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: space-between;
+			position: relative;
+			width: 424px;
+			height: 456px;
+			margin-bottom: 0px;
+
+			img {
+				object-fit: cover;
+				width: 350px;
+				height: 220px;
+			}
+
+			img:last-child {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+
+			}
+
+			img:not(:last-child) {
+				margin-bottom: 0px;
+				object-fit: none;
+				width: 350px;
+			}
+		}
+	}
+}

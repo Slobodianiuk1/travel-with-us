@@ -171,6 +171,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-position: center;
+  position: relative;
 }
 .hero .container {
   display: flex;
@@ -320,6 +321,7 @@ body {
   }
 }
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   top: 0;
@@ -388,8 +390,8 @@ body {
   z-index: 110;
   display: block;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   border: none;
   background-color: #5373FD;
@@ -404,11 +406,11 @@ body {
 .menu__burger span::after {
   position: absolute;
   top: 50%;
-  margin-top: -1px;
+  margin-top: 0px;
   left: 50%;
-  margin-left: -15px;
-  width: 30px;
-  height: 4px;
+  margin-left: -20px;
+  width: 40px;
+  height: 2px;
   transition: all 0.3s ease 0s;
   background-color: #fff;
 }
@@ -441,7 +443,7 @@ body {
 }
 
 .menu__body {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
@@ -454,7 +456,6 @@ body {
 }
 
 .header_active .menu__body {
-  position: fixed;
   left: 0;
   z-index: 100;
 }
